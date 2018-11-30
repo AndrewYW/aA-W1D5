@@ -56,6 +56,7 @@ class PolyTreeNode
             if  current_node.value == target
                 return current_node
             else
+                #current_node.children = new_move_pos
                 current_node.children.each do |child|
                     q << child
                 end
